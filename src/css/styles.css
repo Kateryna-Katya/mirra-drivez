@@ -1,1 +1,278 @@
-1
+:root {
+    /* Palette: Eco-Futurism */
+    --bg-main: #2E4035;
+    /* Средне-темный зеленый */
+    --bg-dark: #1F2E25;
+    /* Темнее для футера */
+    --accent: #CCFF00;
+    /* Кислотный лайм для энергии инноваций */
+    --text-primary: #F0FDF4;
+    /* Почти белый с легким мятным оттенком */
+    --text-secondary: #A3B8AD;
+    /* Приглушенный серо-зеленый */
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+
+    /* Typography */
+    --font-head: 'Space Grotesk', sans-serif;
+    --font-body: 'Manrope', sans-serif;
+
+    /* Spacing */
+    --container-width: 1240px;
+    --header-height: 80px;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: initial;
+    /* Отключаем нативный для Lenis */
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Typography Helpers */
+.text-accent {
+    color: var(--accent);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    background: var(--accent);
+    color: var(--bg-dark);
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(204, 255, 0, 0.4);
+}
+
+.btn--small {
+    padding: 10px 24px;
+    font-size: 14px;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: var(--header-height);
+    background: rgba(46, 64, 53, 0.7);
+    /* Полупрозрачный фон */
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    transition: transform 0.3s ease;
+}
+
+.header__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-family: var(--font-head);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+}
+
+.header__menu {
+    display: flex;
+    gap: 40px;
+}
+
+.header__link {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    position: relative;
+}
+
+.header__link:hover,
+.header__link.active {
+    color: var(--text-primary);
+}
+
+.header__link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: 0.3s ease;
+}
+
+.header__link:hover::after {
+    width: 100%;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.header__burger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: 0.3s;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--bg-dark);
+    padding: 80px 0 30px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer__logo {
+    font-family: var(--font-head);
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__desc {
+    color: var(--text-secondary);
+    font-size: 15px;
+    max-width: 300px;
+}
+
+.footer__title {
+    font-family: var(--font-head);
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+}
+
+.footer__list li {
+    margin-bottom: 12px;
+}
+
+.footer__link {
+    color: var(--text-secondary);
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.footer__link:hover {
+    color: var(--accent);
+}
+
+.footer__contacts li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.footer__contacts svg {
+    width: 18px;
+    height: 18px;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.footer__bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Adaptive */
+@media (max-width: 992px) {
+    .header__nav {
+        display: none;
+    }
+
+    /* Mobile Menu Logic later */
+    .header__burger {
+        display: flex;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
