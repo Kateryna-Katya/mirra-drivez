@@ -7,7 +7,8 @@
   <title>Mirra-Drivez | Инновации на пальцах</title>
   <meta name="description" content="Образовательная платформа нового поколения. Технологии, которые работают на вас.">
 
-  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="icon" type="image/svg+xml"
+  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231F2E25'/%3E%3Cpath d='M16 32 L26 48 L38 16 L48 32' stroke='%23CCFF00' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,27 +18,27 @@
 
   <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/mirra-drivez/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/mirra-drivez/assets/styles-Dtbsf90N.css">
+    <link rel="stylesheet" crossorigin href="/mirra-drivez/assets/styles-BQgqzjhR.css">
   </head>
   <body class="page">
     <div class="page__ambient"></div>
     <header class="header">
   <div class="header__container container">
-    <a href="#" class="header__logo">
+    <a href="./#hero" class="header__logo">
       Mirra<span class="text-accent">Drivez</span>
     </a>
 
     <nav class="header__nav">
       <ul class="header__menu">
-        <li class="header__item"><a href="#hero" class="header__link">Главная</a></li>
-        <li class="header__item"><a href="#platform" class="header__link">Платформа</a></li>
-        <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
-        <li class="header__item"><a href="#education" class="header__link">Обучение</a></li>
+        <li class="header__item"><a href="./#hero" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="./#platform" class="header__link">Платформа</a></li>
+        <li class="header__item"><a href="./#innovations" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="./#education" class="header__link">Обучение</a></li>
       </ul>
     </nav>
 
     <div class="header__actions">
-      <a href="#contact" class="btn btn--small">Запросить доступ</a>
+      <a href="./#contact" class="btn btn--small">Запросить доступ</a>
       <button class="header__burger" aria-label="Меню">
         <span></span>
         <span></span>
@@ -52,7 +53,166 @@
 
     <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section id="hero" class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero__content container">
+        <div class="hero__text-wrapper">
+            <div class="badge badge--glow">Платформа года 2025</div>
+            <h1 class="hero__title">
+                Технологии, которые <br>
+                <span class="text-accent">меняют правила игры</span>
+            </h1>
+            <p class="hero__subtitle">
+                Передовая цифровая инфраструктура для тех, кто строит будущее.
+                Платформа уже доступна в Европе.
+            </p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn">Начать сейчас</a>
+                <a href="#platform" class="btn btn--outline">Узнать детали</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="platform" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Инновации на пальцах</h2>
+            <p class="section-desc">Мы создали экосистему, где сложные технологии становятся простыми инструментами для
+                жизни.</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="card glass-card fade-up">
+                <div class="card__icon"><i data-lucide="zap"></i></div>
+                <h3>Быстрый старт</h3>
+                <p>Подключение занимает 2 минуты. Интуитивный интерфейс, понятный без технического опыта.</p>
+            </div>
+            <div class="card glass-card fade-up" style="transition-delay: 0.1s">
+                <div class="card__icon"><i data-lucide="shield-check"></i></div>
+                <h3>Надежность</h3>
+                <p>Методологии, доказавшие эффективность. Проверенный партнер для вашего роста.</p>
+            </div>
+            <div class="card glass-card fade-up" style="transition-delay: 0.2s">
+                <div class="card__icon"><i data-lucide="trending-up"></i></div>
+                <h3>Стратегия роста</h3>
+                <p>Решения, которые работают на вас. Постройте карьеру на базе передовых инноваций.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="innovations" class="section section--dark">
+    <div class="container">
+        <div class="split-layout">
+            <div class="split-content fade-right">
+                <h2 class="section-title">Технология<br>нового поколения</h2>
+                <p>AI-инструменты для реальных задач. Мы объединили мощь нейросетей и удобство пользовательских
+                    интерфейсов.</p>
+                <ul class="check-list">
+                    <li><i data-lucide="check"></i> Автоматизация рутины</li>
+                    <li><i data-lucide="check"></i> Аналитика в реальном времени</li>
+                    <li><i data-lucide="check"></i> Безопасность данных уровня Enterprise</li>
+                </ul>
+                <a href="#contact" class="btn btn--small margin-top">Оценить перспективы</a>
+            </div>
+            <div class="split-visual fade-left">
+                <div class="code-block glass-card">
+                    <div class="code-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="code-lines">
+                        <div class="line w-80"></div>
+                        <div class="line w-60"></div>
+                        <div class="line w-90"></div>
+                        <div class="line w-40"></div>
+                        <div class="line w-70 accent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section">
+    <div class="container">
+        <h2 class="section-title center">База знаний</h2>
+        <div class="grid-2">
+            <article class="blog-card glass-card fade-up">
+                <div class="blog-card__content">
+                    <div class="blog-card__tag">Гайд</div>
+                    <h3>Как начать без опыта?</h3>
+                    <p>Пошаговый путь, понятный каждому. Разбираем основы цифровой грамотности.</p>
+                    <a href="#" class="link-arrow">Читать далее <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+            <article class="blog-card glass-card fade-up" style="transition-delay: 0.1s">
+                <div class="blog-card__content">
+                    <div class="blog-card__tag">Тренды</div>
+                    <h3>Будущее AI в Европе</h3>
+                    <p>Как новые регуляции влияют на развитие технологий. Экспертный разбор.</p>
+                    <a href="#" class="link-arrow">Читать далее <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section section--contact">
+    <div class="container">
+        <div class="contact-wrapper glass-card">
+            <div class="contact-info">
+                <h2>Воплотите мечты <br>в реальность</h2>
+                <p>Оставьте заявку, чтобы получить доступ к платформе и бесплатную консультацию.</p>
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <i data-lucide="mail"></i>
+                        <span>hello@mirra-drivez.org</span>
+                    </div>
+                    <div class="detail-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>Германия, Берлин</span>
+                    </div>
+                </div>
+            </div>
+
+            <form id="main-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    <label for="name">Имя</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    <label for="phone">Телефон</label>
+                    <span class="error-msg" id="phone-error">Только цифры</span>
+                </div>
+
+                <div class="captcha-group">
+                    <span id="captcha-question">2 + 2 = ?</span>
+                    <input type="text" id="captcha-answer" required placeholder="?">
+                </div>
+
+<div class="checkbox-row">
+    <input type="checkbox" id="policy" required>
+    <label for="policy">
+        Я согласен с <a href="./privacy.html">Политикой конфиденциальности</a>
+    </label>
+</div>
+
+                <button type="submit" class="btn btn--full">Получить доступ</button>
+                <div class="form-status" id="form-status"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
@@ -110,6 +270,11 @@
     </div>
   </div>
 </footer>
+    <div id="cookie-popup" class="cookie-popup glass-card">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+          политике</a>.</p>
+      <button id="accept-cookies" class="btn btn--small">Принять</button>
+    </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
